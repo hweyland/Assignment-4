@@ -1,0 +1,43 @@
+---
+title: "Juvenile Snowshoe Hares in Bonanza Creek: Exploratory Report"
+author: "Hanna Weyland"
+date: "11/15/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+library(lubridate)
+library(janitor)
+library(ggbeeswarm)
+library(kableExtra)
+library(effsize)
+library(broom)
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+bonanza_hares <- read.csv(here("data", "bonanza_hares.csv"))
+```
+
+### Introduction 
+
+A 4 - 5 sentence "mini-introduction" to what this study is exploring, including basic background information about the subject, site and study (with citations as needed), and a brief overview of what is included in the exploratory report. You should probably do this last.
+
+```{r fig.cap="AWESOME CAPTION"}
+
+```
+
+
+### Data and Analysis 
+
+A 3 - 4 sentence section in which you briefly describe the data, including citation & credit as needed, and provide an overview of the main analysis, statistical methods and tools used.
+
+Snowshoe hare data was collected.... As keystone species in the northern boreal forests,  
+
+"you will explore the counts and sizes of juvenile snowshoe hares recorded from 1998 - 2012."
+
+### Exploratory Findings 
+
+In this section, complete and communicate the following
